@@ -1,0 +1,106 @@
+/* Home Section */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Container */
+.home-container {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Image Container */
+.image-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem; /* Space below the image */
+}
+
+/* Intro Text */
+.intro h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+.intro h1 span {
+  color: #ffdd57;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f5f5f5;
+  margin-bottom: 2rem;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: #ddd;
+  margin: 1rem 0;
+}
+
+/* Call-to-Action Buttons */
+.cta-button,
+.secondary-button {
+  display: inline-block;
+  background-color: #ffdd57;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  margin-top: 0.5 rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffc107;
+  transform: scale(1.05);
+}
+
+.secondary-button {
+  background-color: transparent;
+  border: 2px solid #ffdd57;
+  color: #ffdd57;
+}
+
+.secondary-button:hover {
+  background-color: #ffdd57;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .cta-button,
+  .secondary-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .image-container img {
+    width: 120px;
+    height: 120px;
+  }
+}

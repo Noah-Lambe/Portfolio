@@ -1,0 +1,97 @@
+/* About Section */
+.about-section {
+  padding: 3rem 1.5rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.about-container h2 {
+  font-size: 2.5rem;
+  color: var(
+    --accent-color
+  ); /* Use a variable for the accent color (e.g., #007bff) */
+  margin-bottom: 1.5rem;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Skills Section */
+.skills {
+  margin-bottom: 2rem;
+}
+
+.skills h3 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.skills-list li {
+  font-size: 1rem;
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease, color 0.3s ease;
+}
+
+.skills-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #007bff; /* Hover background color */
+  color: white;
+}
+
+/* Personal Info Section */
+.personal-info h3 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.personal-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container h2 {
+    font-size: 2rem;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+.accent {
+  color: #007bff;
+}

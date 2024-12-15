@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/Contact.css';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 function Contact() {
   return (
@@ -28,9 +29,9 @@ function Contact() {
         
         <div className="social-links">
           <p>Or connect with me on:</p>
-          <a href="https://github.com/Noah-Lambe" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/noah-lambe/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="mailto:noahalambe@gmail.com">Email</a>
+          <a href="https://github.com/Noah-Lambe" target="_blank" rel="noopener noreferrer"><FaGithub className="social-icon" />GitHub</a>
+          <a href="https://www.linkedin.com/in/noah-lambe/" target="_blank" rel="noopener noreferrer"><FaLinkedin className="social-icon" />LinkedIn</a>
+          <a href="mailto:noahalambe@gmail.com"><FaEnvelope className="social-icon" />Email</a>
         </div>
       </div>
     </section>

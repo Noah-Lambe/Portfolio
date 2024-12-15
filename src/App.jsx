@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header';
 import Projects from './Components/Projects';
@@ -10,14 +10,24 @@ import './Styles/App.css';
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
+  useEffect(() => {
+    const savedMode = localStorage.getItem('darkMode') === 'true';
+    setDarkMode(savedMode);
+  }, []);
+
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => {
+      const newMode = !prevMode;
+      localStorage.setItem('darkMode', newMode);
+      return newMode;
+    });
+  };
+
   return (
     <Router>
-      {/* Apply dark mode class to the main wrapper */}
       <div className={darkMode ? 'app dark' : 'app'}>
-        {/* Pass dark mode toggle to Header */}
-        <Header darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
+        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
-        {/* Main content with Routes */}
         <main>
           <Routes>
             <Route path="/" element={<Home />} />

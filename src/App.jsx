@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Projects from './Components/Projects';
 import About from './Components/About';
 import Home from './Components/Home';
+import Contact from './Components/Contact';
 import './Styles/App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="projects" element={<Projects />} />
+            <Route path="contact" element={<Contact />} />
           </Routes>
         </main>
       </div>

@@ -18,7 +18,7 @@ function Home() {
           <p className="subtext">
             Interested in collaborating? Feel free to reach out and let's build something amazing together.
           </p>
-          <a href="#contact" className="secondary-button">Get in Touch</a>
+          <a href="contact" className="secondary-button">Get in Touch</a>
         </div>
       </div>
     </section>

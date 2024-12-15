@@ -16,7 +16,7 @@ function Home() {
           </p>
           <a href="projects" className="cta-button">See my Work</a>
           <p className="subtext">
-            Interested in collaborating? Feel free to reach out and let's build something amazing together.
+            Interested in collaborating? Feel free to reach out and let's build something great together.
           </p>
           <a href="contact" className="secondary-button">Get in Touch</a>
         </div>

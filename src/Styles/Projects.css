@@ -16,7 +16,7 @@
 .project-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Limit to 3 columns */
-  gap: 2rem; /* Space between grid items */
+  gap: 2rem;
   padding: 0 1rem;
   justify-content: center; /* Center the grid */
 }

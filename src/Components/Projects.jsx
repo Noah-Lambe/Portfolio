@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/Projects.css";
-import projectsData from "../ProjectsData.js"; // Import the project data
+import projectsData from "../ProjectsData.js";
 
 function Projects() {
   return (

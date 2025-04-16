@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../Styles/Home.css';
 import ProfilePhoto from '../assets/Profile-photo3.jpg';
 
@@ -14,11 +15,11 @@ function Home() {
           <p>
             A <strong>Front-End Developer</strong> Crafting Engaging Web Experiences
           </p>
-          <a href="projects" className="cta-button">See my Work</a>
+          <Link to="/projects" className="cta-button">See my Work</Link>
           <p className="subtext">
             Interested in collaborating? Feel free to reach out and let's build something great together.
           </p>
-          <a href="contact" className="secondary-button">Get in Touch</a>
+          <Link to="/contact" className="secondary-button">Get in Touch</Link>
         </div>
       </div>
     </section>

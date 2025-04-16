@@ -1,3 +1,13 @@
+import portfolioImg from "./assets/Projects screenshots/Portfolio website.png";
+import ecommerceImg from "./assets/Projects screenshots/Semester 2 SPRINT 2.png";
+import eventManagerImg from "./assets/Projects screenshots/Event Manager app.png";
+import dogGalleryImg from "./assets/Projects screenshots/Semester 2 QAP 3.png";
+import modestMosImg from "./assets/Projects screenshots/Semester 1 WEB SPRINT 1.png";
+import insuranceImg from "./assets/Projects screenshots/Semester 1 PYTHON QAP4.png";
+import menuAppImg from "./assets/Projects screenshots/Semester 1 PYTHON SPRINT 1.png";
+import historyImg from "./assets/Projects screenshots/Semester 1 WEB QAP2.png";
+import carWebsiteImg from "./assets/Projects screenshots/Semester 2 QAP1.png";
+
 const projectsData = [
   {
     id: 1,
@@ -5,7 +15,7 @@ const projectsData = [
     description:
       "A personal portfolio built with React to showcase my skills and projects.",
     technologies: ["React", "CSS", "JavaScript"],
-    image: "src/assets/Projects screenshots/Portfolio website.png",
+    image: portfolioImg,
     link: "https://github.com/Noah-Lambe/Portfolio",
   },
   {
@@ -21,7 +31,7 @@ const projectsData = [
       "Vitest",
       "React Testing Library",
     ],
-    image: "src/assets/Projects screenshots/Semester 2 SPRINT 2.png",
+    image: ecommerceImg,
     link: "https://github.com/Noah-Lambe/Sprint_2",
   },
   {
@@ -30,7 +40,7 @@ const projectsData = [
     description:
       "A simple web app for managing daily tasks with features like adding, editing, and deleting tasks.",
     technologies: ["React", "Node.js", "CSS", "JSON"],
-    image: "src/assets/Projects screenshots/Event Manager app.png",
+    image: eventManagerImg,
     link: "https://github.com/Noah-Lambe/Event_Manager",
   },
   {
@@ -39,7 +49,7 @@ const projectsData = [
     description:
       "A Dog image fetching app that uses Dog CEO API to fetch images of selected dog breeds.",
     technologies: ["React", "CSS", "JavaScript", "API"],
-    image: "src/assets/Projects screenshots/Semester 2 QAP 3.png",
+    image: dogGalleryImg,
     link: "https://github.com/Noah-Lambe/Noah_Lambe_QAP3",
   },
   {
@@ -48,7 +58,7 @@ const projectsData = [
     description:
       "A mock e-commerce webpage designed for purchasing computer parts.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    image: "src/assets/Projects screenshots/Semester 1 WEB SPRINT 1.png",
+    image: modestMosImg,
     link: "https://github.com/Noah-Lambe/NoahW_JonathanS_NoahL_Sprint1",
   },
   {
@@ -57,7 +67,7 @@ const projectsData = [
     description:
       "A Python program designed for an insurance company to calculate and manage customer policy details, premiums, taxes, and payment options. Includes functions, data validation, and receipt generation with support for multiple claims and payment plans.",
     technologies: ["Python", "Functions", "Lists", "File Handling"],
-    image: "src/assets/Projects screenshots/Semester 1 PYTHON QAP4.png",
+    image: insuranceImg,
     link: "https://github.com/Noah-Lambe/QAP-4-Python",
   },
   {
@@ -66,7 +76,7 @@ const projectsData = [
     description:
       "A Python application compiling five mini-programs into a menu-driven system, covering employee travel claims, interview questions, string and date manipulations, equipment maintenance schedules, and exploring new Python features. Includes well-structured functions, validations, and visually appealing input/output formatting.",
     technologies: ["Python", "Menu Systems", "Functions", "Date Handling"],
-    image: "src/assets/Projects screenshots/Semester 1 PYTHON SPRINT 1.png",
+    image: menuAppImg,
     link: "https://github.com/Noah-Lambe/Group-20-Sprint-1---Python-",
   },
   {
@@ -75,7 +85,7 @@ const projectsData = [
     description:
       "An informational website exploring the evolution of computers, featuring key historical milestones, significant figures, and groundbreaking innovations.",
     technologies: ["HTML", "CSS"],
-    image: "src/assets/Projects screenshots/Semester 1 WEB QAP2.png",
+    image: historyImg,
     link: "https://github.com/Noah-Lambe/QAP-2-Web-Dev",
   },
   {
@@ -84,7 +94,7 @@ const projectsData = [
     description:
       "A multimedia educational website that explores the history and details of a selected car brand. Includes text content, open-licensed images, videos, and audio resources, with a focus on semantic HTML5 elements, responsive design using CSS or Bootstrap, and accessibility.",
     technologies: ["HTML", "CSS", "Flexbox", "Multimedia Integration"],
-    image: "src/assets/Projects screenshots/Semester 2 QAP1.png",
+    image: carWebsiteImg,
     link: "https://github.com/Noah-Lambe/QAP-2-Web-Dev",
   },
 ];

@@ -57,7 +57,7 @@
   border-radius: 5px;
   background-color: var(--accent-color);
   color: var(--button-text-color);
-  opacity: 0.4;
+  opacity: 1;
   transition: background-color 0.3s ease, color 0.3s ease;
 
   animation: spotlight 28s linear infinite;
@@ -94,7 +94,7 @@
 @keyframes spotlight {
   0%,
   10% {
-    opacity: 0.8;
+    opacity: 1;
     background-color: var(--accent-color);
     color: var(--button-text-color);
     transform: none;
@@ -111,7 +111,7 @@
   }
 
   18% {
-    opacity: 0.8;
+    opacity: 1;
     background-color: var(--accent-color);
     color: var(--button-text-color);
     transform: none;
@@ -119,6 +119,6 @@
   }
 
   100% {
-    opacity: 0.8;
+    opacity: 1;
   }
 }

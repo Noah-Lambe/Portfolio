@@ -11,7 +11,7 @@ function Home() {
           <img src={ProfilePhoto} alt="Noah Lambe" />
         </div>
         <div className="intro">
-          <h1>Hi, I'm <span>Noah</span></h1>
+          <h1>Hi, I'm <span>Noah</span>.</h1>
           <p>
             A <strong>Front-End Developer</strong> Crafting Engaging Web Experiences
           </p>

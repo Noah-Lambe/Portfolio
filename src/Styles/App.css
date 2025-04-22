@@ -1,32 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lacquer&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sarina&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap");
 
-/* General App Styles */
-.app {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  min-height: 100vh;
-  transition: background-color 0.3s ease, color 0.3s ease;
+/* ─────────────────────────────
+   Global Layout Setup
+───────────────────────────── */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-family: "Source Code Pro", Arial, sans-serif;
 }
 
-/* Dark Mode Variables */
+/* ─────────────────────────────
+   App Wrapper (Flex Layout)
+───────────────────────────── */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header stays top, size is dynamic */
+header {
+  flex-shrink: 0;
+}
+
+/* Main fills remaining height and scrolls if needed */
+main {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* ─────────────────────────────
+   Theme Variables
+───────────────────────────── */
 :root {
-  --background-color: #f5f5f5; /* Light mode background */
-  --text-color: #333; /* Light mode text */
-  --header-background-color: #fff; /* Light mode header background */
-  --button-background-color: #007bff; /* Light mode button background */
-  --button-text-color: #333; /* Light mode button text */
+  --background-color: #f5f5f5;
+  --text-color: #333;
+  --header-background-color: #fff;
+  --button-background-color: #007bff;
+  --button-text-color: #333;
 }
 
 .app.dark {
-  --background-color: #333; /* Dark mode background */
-  --text-color: #f5f5f5; /* Dark mode text */
-  --header-background-color: #444; /* Dark mode header background */
-  --button-background-color: #555; /* Dark mode button background */
-  --button-text-color: #f5f5f5; /* Dark mode button text */
+  --background-color: #333;
+  --text-color: #f5f5f5;
+  --header-background-color: #444;
+  --button-background-color: #555;
+  --button-text-color: #f5f5f5;
 }
 
-/* Header Styles */
+/* ─────────────────────────────
+   Header Styling
+───────────────────────────── */
 .header {
   padding: 1rem 2rem;
   display: flex;
@@ -43,7 +74,9 @@
   font-size: 1.5rem;
 }
 
-/* Dark Mode Button */
+/* ─────────────────────────────
+   Dark Mode Toggle Button
+───────────────────────────── */
 .dark-mode-toggle {
   background-color: var(--button-background-color);
   color: var(--button-text-color);
@@ -56,9 +89,9 @@
 }
 
 .dark-mode-toggle:hover {
-  background-color: #0056b3; /* Slightly darker hover for light mode */
+  background-color: #0056b3;
 }
 
 .app.dark .dark-mode-toggle:hover {
-  background-color: #777; /* Slightly lighter hover for dark mode */
+  background-color: #777;
 }

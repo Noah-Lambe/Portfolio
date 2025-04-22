@@ -7,16 +7,27 @@ import insuranceImg from "./assets/Projects screenshots/Semester 1 PYTHON QAP4.p
 import menuAppImg from "./assets/Projects screenshots/Semester 1 PYTHON SPRINT 1.png";
 import historyImg from "./assets/Projects screenshots/Semester 1 WEB QAP2.png";
 import carWebsiteImg from "./assets/Projects screenshots/Semester 2 QAP1.png";
+import passwordGenerator from "./assets/Projects screenshots/Password-generator.png";
+import pharmacyManager from "./assets/Projects screenshots/Pharmacy Management system.png";
+import gymManager from "./assets/Projects screenshots/Gym management system.png";
+import mathQuiz from "./assets/Projects screenshots/Math Quiz App.png";
+import gameGallery from "./assets/Projects screenshots/Video Game gallery.png";
+import socketChat from "./assets/Projects screenshots/Socket Chat.webp";
 
 const projectsData = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description:
-      "A personal portfolio built with React to showcase my skills and projects.",
-    technologies: ["React", "CSS", "JavaScript"],
-    image: portfolioImg,
-    link: "https://github.com/Noah-Lambe/Portfolio",
+    title: "Live Messaging Application",
+    description: "A fully functional, real-time chat application.",
+    technologies: [
+      "Javascript",
+      "Express JS",
+      "MongoDB",
+      "EJS templates",
+      "WebSockets",
+    ],
+    image: socketChat,
+    link: "https://github.com/Noah-Lambe/Messaging-App",
   },
   {
     id: 8,
@@ -51,6 +62,15 @@ const projectsData = [
     technologies: ["React", "CSS", "JavaScript", "API"],
     image: dogGalleryImg,
     link: "https://github.com/Noah-Lambe/Noah_Lambe_QAP3",
+  },
+  {
+    id: 14,
+    title: "Video Game Library",
+    description:
+      "An Express-based application that allows users to explore a collection of video games.",
+    technologies: ["Javascript", "Express JS"],
+    image: gameGallery,
+    link: "https://github.com/Noah-Lambe/Video-Game-Gallery-Website",
   },
   {
     id: 4,
@@ -96,6 +116,51 @@ const projectsData = [
     technologies: ["HTML", "CSS", "Flexbox", "Multimedia Integration"],
     image: carWebsiteImg,
     link: "https://github.com/Noah-Lambe/QAP-2-Web-Dev",
+  },
+  {
+    id: 10,
+    title: "CLI Password Generator",
+    description:
+      "A Node.js program to generate secure, random passwords based on user-specified options.",
+    technologies: ["Javascript", "CLI"],
+    image: passwordGenerator,
+    link: "https://github.com/Noah-Lambe/Password-generator",
+  },
+  {
+    id: 11,
+    title: "Pharmacy Management System",
+    description:
+      "This program helps track patients, doctors, medications, prescriptions, and generate reports related to the pharmacy system. The application is console-based and allows the user to interact with the system by selecting various options from the menu.",
+    technologies: ["Java", "CLI"],
+    image: pharmacyManager,
+    link: "https://github.com/Noah-Lambe/Semester_3_Sprint_1_Java/tree/main/Semester_3_Sprint_1_Java/src",
+  },
+  {
+    id: 12,
+    title: "Gym Management System",
+    description:
+      "This application is a tool designed to help gyms manage their customers, staff, and offered services. The functionality varies depending on the user's role.",
+    technologies: ["Java", "SQL"],
+    image: gymManager,
+    link: "https://github.com/Noah-Lambe/Gym_Management_System",
+  },
+  {
+    id: 13,
+    title: "Math Quiz App",
+    description:
+      "A simple web application where users can practice solving math questions, track their streak of correct answers.",
+    technologies: ["Javascript", "Express JS"],
+    image: mathQuiz,
+    link: "https://github.com/Noah-Lambe/Math-Quiz-App",
+  },
+  {
+    id: 15,
+    title: "Portfolio Website",
+    description:
+      "A personal portfolio built with React to showcase my skills and projects.",
+    technologies: ["React", "CSS", "JavaScript"],
+    image: portfolioImg,
+    link: "https://github.com/Noah-Lambe/Portfolio",
   },
 ];
 

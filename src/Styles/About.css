@@ -53,20 +53,15 @@
 
 .skills-list li {
   font-size: 1rem;
-  background-color: var(--accent-color);
-  color: var(--button-text-color);
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease,
-    background-color 0.3s ease, color 0.3s ease;
-}
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+  opacity: 0.4;
+  transition: background-color 0.3s ease, color 0.3s ease;
 
-.skills-list li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  background-color: #007bff; /* Hover background color */
-  color: white;
+  animation: spotlight 28s linear infinite;
+  animation-delay: calc(var(--delay) * 2s);
 }
 
 /* Personal Info Section */
@@ -94,4 +89,36 @@
 
 .accent {
   color: #007bff;
+}
+
+@keyframes spotlight {
+  0%,
+  10% {
+    opacity: 0.8;
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+    transform: none;
+    box-shadow: none;
+  }
+
+  11%,
+  17% {
+    opacity: 1;
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  18% {
+    opacity: 0.8;
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+    transform: none;
+    box-shadow: none;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
 }

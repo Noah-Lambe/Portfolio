@@ -1,17 +1,34 @@
-/* Contact Section */
+/* ─────────────────────────────
+   Global Box Sizing (Best Practice)
+───────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ─────────────────────────────
+   Contact Section Layout
+───────────────────────────── */
 .contact-section {
   padding: 3rem 1.5rem;
   background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
   text-align: center;
+  max-height: 100%;
 }
 
 .contact-container {
   max-width: 800px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
+/* ─────────────────────────────
+   Headings & Text
+───────────────────────────── */
 .contact-container h2 {
   font-size: 2.5rem;
   color: var(--accent-color);
@@ -25,11 +42,14 @@
   color: var(--text-secondary-color);
 }
 
-/* Form Styling */
+/* ─────────────────────────────
+   Contact Form Styling
+───────────────────────────── */
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  width: 100%;
   margin-bottom: 2rem;
 }
 
@@ -64,12 +84,15 @@
   outline: none;
 }
 
+/* ─────────────────────────────
+   Submit Button
+───────────────────────────── */
 .submit-button {
   background-color: var(--accent-color);
   color: var(--button-text-color);
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  border: 1px solid white;
+  border: 1px solid var(--button-text-color);
   border-radius: 5px;
   cursor: pointer;
   margin: auto;
@@ -81,7 +104,9 @@
   transform: scale(1.05);
 }
 
-/* Social Links */
+/* ─────────────────────────────
+   Social Links Section
+───────────────────────────── */
 .social-links {
   margin-top: 2rem;
 }
@@ -112,14 +137,30 @@
   font-size: 1.2rem;
 }
 
-/* Responsive Design */
+/* ─────────────────────────────
+   Responsive Design (Mobile)
+───────────────────────────── */
 @media (max-width: 768px) {
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
   .contact-container h2 {
     font-size: 2rem;
   }
 
   .contact-container p {
     font-size: 1rem;
+  }
+
+  .contact-form {
+    gap: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.95rem;
+    padding: 0.6rem;
   }
 
   .submit-button {

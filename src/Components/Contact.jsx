@@ -28,7 +28,7 @@ function Contact() {
         </form>
         
         <div className="social-links">
-          <p>Or connect with me on:</p>
+          <p>Or connect with me through:</p>
           <a href="https://github.com/Noah-Lambe" target="_blank" rel="noopener noreferrer"><FaGithub className="social-icon" />GitHub</a>
           <a href="https://www.linkedin.com/in/noah-lambe/" target="_blank" rel="noopener noreferrer"><FaLinkedin className="social-icon" />LinkedIn</a>
           <a href="mailto:noahalambe@gmail.com"><FaEnvelope className="social-icon" />Email</a>

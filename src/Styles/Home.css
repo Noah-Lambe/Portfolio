@@ -1,35 +1,51 @@
-/* Home Section */
+/* ─────────────────────────────
+   Global Box Sizing (Consistent)
+───────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ─────────────────────────────
+   Home Section Layout
+───────────────────────────── */
 .home-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #007bff, #0056b3);
+  padding: 2rem 1.5rem;
+  background: linear-gradient(360deg, #007bff, #0056b3);
   color: var(--text-color);
+  text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Container */
+/* ─────────────────────────────
+   Container
+───────────────────────────── */
 .home-container {
-  display: flex;
-  flex-direction: column; /* Stack content vertically */
-  align-items: center;
-  justify-content: center;
   max-width: 800px;
+  width: 100%;
   padding: 2rem;
-  text-align: center;
+  box-sizing: border-box;
 }
 
-/* Image Container */
+/* ─────────────────────────────
+   Profile Image
+───────────────────────────── */
 .image-container img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 25%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  margin-bottom: 1.5rem; /* Space below the image */
+  margin-bottom: 1.5rem;
 }
 
-/* Intro Text */
+/* ─────────────────────────────
+   Intro Text
+───────────────────────────── */
 .intro h1 {
   font-size: 3rem;
   color: white;
@@ -52,7 +68,9 @@
   margin: 1rem 0;
 }
 
-/* Call-to-Action Buttons */
+/* ─────────────────────────────
+   Call-to-Action Buttons
+───────────────────────────── */
 .cta-button,
 .secondary-button {
   display: inline-block;
@@ -84,8 +102,14 @@
   color: #333;
 }
 
-/* Responsive Design */
+/* ─────────────────────────────
+   Responsive Design
+───────────────────────────── */
 @media (max-width: 768px) {
+  .home-section {
+    padding: 2rem 1rem;
+  }
+
   .intro h1 {
     font-size: 2.5rem;
   }
@@ -101,7 +125,7 @@
   }
 
   .image-container img {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
   }
 }

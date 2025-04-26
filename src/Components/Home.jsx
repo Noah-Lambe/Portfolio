@@ -13,7 +13,7 @@ function Home() {
         <div className="intro">
           <h1>Hi, I'm <span>Noah</span>.</h1>
           <p>
-            A <strong>Front-End Developer</strong> Crafting Engaging Web Experiences
+            A <strong>Front-End Developer</strong> Crafting Engaging Web Experiences.
           </p>
           <Link to="/projects" className="cta-button">See my Work</Link>
           <p className="subtext">

@@ -54,7 +54,7 @@
 .skills-list li {
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
+  border-radius: 50px;
   background-color: var(--accent-color);
   color: var(--button-text-color);
   opacity: 1;

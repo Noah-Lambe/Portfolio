@@ -52,7 +52,7 @@ function About() {
 
         <div className="skills">
         <h3>Languages, Frameworks, & Tools</h3>
-          <ul className="skills-list no-animation-list">
+          <ul className="skills-grid">
             {languagesAndFrameworks.map((skill, index) => (
               <li key={index} className="skill-card">
                 <img src={skill.logo} alt={`${skill.name} logo`} className="skill-logo" />
@@ -62,9 +62,9 @@ function About() {
           </ul>
 
           <h3>Concepts & Technical Skills</h3>
-          <ul className="skills-list animated-list">
+          <ul className="skills-animated-list">
             {conceptsAndTechnicalSkills.map((skill, index) => (
-              <li key={index} style={{ '--delay': index + languagesAndFrameworks.length } }>
+              <li key={index} style={{ '--delay': index }}>
                 {skill}
               </li>
             ))}

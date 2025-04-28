@@ -11,13 +11,12 @@
   margin: 0 auto;
   text-align: center;
   margin-top: 0px;
+  animation: fadeInUp 1s ease forwards;
 }
 
 .about-container h2 {
   font-size: 2.5rem;
-  color: var(
-    --accent-color
-  ); /* Use a variable for the accent color (e.g., #007bff) */
+  color: var(--accent-color);
   margin-bottom: 1.5rem;
 }
 
@@ -30,6 +29,7 @@
 .intro {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  letter-spacing: 0.5px;
 }
 
 /* Skills Section */
@@ -54,17 +54,26 @@
 .skills-list li {
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  border-radius: 50px;
   background-color: var(--accent-color);
   color: var(--button-text-color);
   opacity: 1;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+.animated-list li {
+  border-radius: 50px;
   animation: spotlight 28s linear infinite;
   animation-delay: calc(var(--delay) * 2s);
 }
 
 /* Personal Info Section */
+.personal-info {
+  background-color: rgba(0, 123, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
 .personal-info h3 {
   font-size: 1.8rem;
   color: var(--text-color);
@@ -74,6 +83,7 @@
 .personal-info p {
   font-size: 1.1rem;
   line-height: 1.6;
+  letter-spacing: 0.5px;
 }
 
 /* Responsive Design */
@@ -91,6 +101,7 @@
   color: #007bff;
 }
 
+/* Animations */
 @keyframes spotlight {
   0%,
   10% {
@@ -121,4 +132,72 @@
   100% {
     opacity: 1;
   }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.no-animation-list {
+  border-radius: 40px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.skill-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.skill-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.skills h3,
+.personal-info h3 {
+  margin-top: 2.5rem;
+}
+
+.skills {
+  margin-bottom: 3rem;
+}
+
+.personal-info {
+  margin-bottom: 3rem;
+}
+
+.personal-info p {
+  margin-bottom: 1.5rem;
 }

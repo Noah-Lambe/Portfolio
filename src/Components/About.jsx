@@ -1,22 +1,45 @@
 import React from 'react';
 import '../Styles/About.css';
 
+import gitLogo from '../assets/Logos/Git.png';
+import htmlCssLogo from '../assets/Logos/HTML+CSS.png';
+import javaLogo from '../assets/Logos/Java.png';
+import javascriptLogo from '../assets/Logos/JavaScript.png';
+import mongoLogo from '../assets/Logos/Mongo.webp';
+import nodeExpressLogo from '../assets/Logos/Node+Express.png';
+import pythonLogo from '../assets/Logos/Python.webp';
+import reactLogo from '../assets/Logos/React.png';
+import sqlLogo from '../assets/Logos/SQL.png';
+
+
 function About() {
-  const skills = [
-    "React.js, Server-Side Rendering (React)",
-    "JavaScript",
-    "HTML, CSS, Responsive Design",
-    "State Management, UI/UX Principles",
-    "Express.js, RESTful API Development",
-    "MongoDB, Mongoose (NoSQL Databases)",
-    "SQL & Relational Database Concepts",
-    "Java, Object-Oriented Programming (OOP)",
-    "Python, Command Line Interface",
-    "Git, GitHub, Version Control",
+  const languagesAndFrameworks = [
+    { name: "JavaScript", logo: javascriptLogo },
+    { name: "React.js (including SSR)", logo: reactLogo },
+    { name: "HTML & CSS", logo: htmlCssLogo },
+    { name: "Node.js & Express.js", logo: nodeExpressLogo },
+    { name: "MongoDB & Mongoose", logo: mongoLogo },
+    { name: "SQL (Relational Databases)", logo: sqlLogo },
+    { name: "Java", logo: javaLogo },
+    { name: "Python", logo: pythonLogo },
+    { name: "Git & GitHub", logo: gitLogo }
+  ];
+
+  const conceptsAndTechnicalSkills = [
+    "Object-Oriented Programming (OOP)",
+    "State Management & UI/UX Principles",
+    "RESTful API Development",
+    "Command Line Interface (CLI)",
+    "Version Control with Git & GitHub",
     "Agile Development Practices",
     "Code Quality, Testing, and Maintainability",
     "Jest (Unit & Component Testing)",
-    "AWS, Cloud-Native Development"
+    "AWS (Cloud-Native Development)",
+    "Responsive Web Design",
+    "Authentication & Authorization",
+    "Database Design & Data Modeling",
+    "API Integration & Data Fetching",
+    "Continuous Learning & Problem-Solving"
   ];
 
   return (
@@ -26,12 +49,24 @@ function About() {
         <p className="intro">
           Hi, I'm <span className="accent"><strong>Noah</strong></span>. I'm a full-stack developer with a strong front-end focus, passionate about building responsive, user-friendly web experiences. I specialize in React.js and JavaScript, but I also work comfortably across the stack with technologies like Express.js, MongoDB, REST APIs, and SQL. I enjoy turning design ideas into polished interfaces, while also handling backend logic, data flow, and deployment when needed. I'm experienced in Git-based workflows, Agile development, cloud-native projects with AWS, and writing maintainable, tested code with tools like Jest. I bring creativity, precision, and a user-first mindset to every project I build.
         </p>
-        
+
         <div className="skills">
-          <h3>My Skills</h3>
-          <ul className="skills-list">
-            {skills.map((skill, index) => (
-              <li key={index} style={{ '--delay': index }}>{skill}</li>
+        <h3>Languages, Frameworks, & Tools</h3>
+          <ul className="skills-list no-animation-list">
+            {languagesAndFrameworks.map((skill, index) => (
+              <li key={index} className="skill-card">
+                <img src={skill.logo} alt={`${skill.name} logo`} className="skill-logo" />
+                <span className="skill-name">{skill.name}</span>
+              </li>
+            ))}
+          </ul>
+
+          <h3>Concepts & Technical Skills</h3>
+          <ul className="skills-list animated-list">
+            {conceptsAndTechnicalSkills.map((skill, index) => (
+              <li key={index} style={{ '--delay': index + languagesAndFrameworks.length } }>
+                {skill}
+              </li>
             ))}
           </ul>
         </div>

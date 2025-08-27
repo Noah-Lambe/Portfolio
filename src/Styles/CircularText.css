@@ -1,0 +1,48 @@
+.circular-text {
+  margin: 0 auto;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+  transform-origin: 50% 50%;
+  display: grid;
+  place-items: center;
+  position: relative; /* ensure absolute children anchor correctly */
+}
+
+/* spinning ring wrapper */
+.circular-text__ring {
+  position: absolute;
+  inset: 0;
+}
+
+/* each letter anchored at center so we can rotate+translate out to the radius */
+.circular-text__char {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: center;
+  white-space: pre; /* keep spaces/dots */
+  font-size: 24px;
+  pointer-events: none; /* don't block hover on container/center */
+  transition: transform 0.5s cubic-bezier(0, 0, 0, 1);
+}
+
+/* optional center content */
+.circular-text__center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+}
+
+/* optional nice round image style */
+.circular-text__center img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}

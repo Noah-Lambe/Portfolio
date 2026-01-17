@@ -67,14 +67,14 @@ function Home() {
 
           <GlareHover
             as={Link}
-            to="/contact"
+            to="/projects"
             className="cta-button"
             background="transparent"
             width="auto"
             height="auto"
             borderRadius="5px"
           >
-            Contact me
+            See my Work
           </GlareHover>
 
           {/* <Link to="/projects" className="cta-button">
